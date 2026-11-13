@@ -3,10 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#071f10">
 <title>الجمعية الصيدلانية العُمانية | Oman Pharmaceutical Society</title>
-<style>body{margin:0;background:#071f10}</style>
+<style>
+html,body{margin:0;height:100%;background:#071f10;color:#fff;font-family:system-ui,sans-serif}
+.l{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px}
+.r{width:64px;height:64px;border-radius:50%;border:3px solid rgba(155,209,75,.25);border-top-color:#9bd14b;animation:s 0.9s linear infinite}
+.t{font-size:18px;opacity:.85}
+.e{font-size:13px;opacity:.5;letter-spacing:.1em}
+@keyframes s{to{transform:rotate(360deg)}}
+</style>
 </head>
 <body>
+<div class="l"><div class="r"></div><div class="t">الجمعية الصيدلانية العُمانية</div><div class="e">OMAN PHARMACEUTICAL SOCIETY</div></div>
 <script>
 fetch("index_1_1.html",{cache:"no-cache"}).then(function(r){return r.text()}).then(function(t){document.open();document.write(t);document.close();}).catch(function(){location.replace("index_1_1.html")});
 </script>
